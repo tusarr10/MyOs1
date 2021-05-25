@@ -243,6 +243,7 @@ Partial Class mainform
         'NavBarGroup2
         '
         Me.NavBarGroup2.Caption = "Deposit"
+        Me.NavBarGroup2.Expanded = True
         Me.NavBarGroup2.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarItem5), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarItem6), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarItem7), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarItem8)})
         Me.NavBarGroup2.Name = "NavBarGroup2"
         '

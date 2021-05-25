@@ -9,7 +9,7 @@ Public NotInheritable Class Program
 
     End Sub
     Shared Sub Main()
-        SplashScreenManager.ShowForm(GetType(ssMyOs))
+        ' SplashScreenManager.ShowForm(GetType(ssMyOs))
         BonusSkins.Register()
         SkinManager.EnableFormSkins()
         Application.EnableVisualStyles()

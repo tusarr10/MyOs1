@@ -32,9 +32,6 @@ Public Class mainform
         PanelControl1.Controls.Add(details)
     End Sub
 
-    Private Sub mainform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Private Sub mainform_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         ' e.Cancel = True
@@ -64,6 +61,4 @@ Public Class mainform
         'parentRRibbon.StatusBar.MergeStatusBar(childRibbon.StatusBar)
         TryCast(sender, RibbonControl).StatusBar.MergeStatusBar(e.MergedChild.StatusBar)
     End Sub
-
-
 End Class

@@ -95,6 +95,12 @@
     <Compile Include="Control\DetailsView.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Emplyee\forms\UserAc.Designer.vb">
+      <DependentUpon>UserAc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emplyee\forms\UserAc.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Emplyee\usercontrol\AllUser.Designer.vb">
       <DependentUpon>AllUser.vb</DependentUpon>
     </Compile>
@@ -143,12 +149,6 @@
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="Program.vb" />
-    <Compile Include="progressview\ssMyOs.Designer.vb">
-      <DependentUpon>ssMyOs.vb</DependentUpon>
-    </Compile>
-    <Compile Include="progressview\ssMyOs.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Settingsetup.Designer.vb">
       <DependentUpon>Settingsetup.vb</DependentUpon>
     </Compile>
@@ -157,6 +157,9 @@
     </Compile>
     <EmbeddedResource Include="Control\DetailsView.resx">
       <DependentUpon>DetailsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emplyee\forms\UserAc.resx">
+      <DependentUpon>UserAc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emplyee\usercontrol\AllUser.resx">
       <DependentUpon>AllUser.vb</DependentUpon>
@@ -194,9 +197,6 @@
     <EmbeddedResource Include="Settingsetup.resx">
       <DependentUpon>Settingsetup.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="progressview\ssMyOs.resx">
-      <DependentUpon>ssMyOs.vb</DependentUpon>
-    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -218,7 +218,20 @@
     <Folder Include="admin\" />
     <Folder Include="advance\" />
     <Folder Include="controlviewclass\" />
+    <Folder Include="progressview\" />
     <Folder Include="superuser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainForm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accounting.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

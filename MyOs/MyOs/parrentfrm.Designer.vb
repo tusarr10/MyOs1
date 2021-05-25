@@ -24,32 +24,28 @@ Partial Class parrentfrm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim SplashScreenManager1 As DevExpress.XtraSplashScreen.SplashScreenManager = New DevExpress.XtraSplashScreen.SplashScreenManager(Me, GetType(Global.MyOs.ssMyOs), True, True)
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(parrentfrm))
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.barManager1 = New DevExpress.XtraBars.BarManager(Me.components)
+        Me.bar2 = New DevExpress.XtraBars.Bar()
         Me.MenuBar = New DevExpress.XtraBars.BarSubItem()
         Me.SettingMenuBar = New DevExpress.XtraBars.BarButtonItem()
-        Me.bar2 = New DevExpress.XtraBars.Bar()
+        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
         Me.bar3 = New DevExpress.XtraBars.Bar()
         Me.barBtnStart = New DevExpress.XtraBars.BarButtonItem()
         Me.PopupMenu1 = New DevExpress.XtraBars.PopupMenu(Me.components)
         Me.BtnExit = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem5 = New DevExpress.XtraBars.BarButtonItem()
         Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
-        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.barManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PopupMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'SplashScreenManager1
-        '
-        SplashScreenManager1.ClosingDelay = 500
         '
         'barManager1
         '
@@ -59,10 +55,21 @@ Partial Class parrentfrm
         Me.barManager1.DockControls.Add(Me.barDockControlLeft)
         Me.barManager1.DockControls.Add(Me.barDockControlRight)
         Me.barManager1.Form = Me
-        Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.barBtnStart, Me.BtnExit, Me.MenuBar, Me.SettingMenuBar, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4})
+        Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.barBtnStart, Me.BtnExit, Me.MenuBar, Me.SettingMenuBar, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5})
         Me.barManager1.MainMenu = Me.bar2
-        Me.barManager1.MaxItemId = 8
+        Me.barManager1.MaxItemId = 11
         Me.barManager1.StatusBar = Me.bar3
+        '
+        'bar2
+        '
+        Me.bar2.BarName = "Main menu"
+        Me.bar2.DockCol = 0
+        Me.bar2.DockRow = 0
+        Me.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
+        Me.bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.MenuBar)})
+        Me.bar2.OptionsBar.MultiLine = True
+        Me.bar2.OptionsBar.UseWholeRow = True
+        Me.bar2.Text = "Main menu"
         '
         'MenuBar
         '
@@ -78,16 +85,23 @@ Partial Class parrentfrm
         Me.SettingMenuBar.Id = 3
         Me.SettingMenuBar.Name = "SettingMenuBar"
         '
-        'bar2
+        'BarButtonItem2
         '
-        Me.bar2.BarName = "Main menu"
-        Me.bar2.DockCol = 0
-        Me.bar2.DockRow = 0
-        Me.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-        Me.bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.MenuBar)})
-        Me.bar2.OptionsBar.MultiLine = True
-        Me.bar2.OptionsBar.UseWholeRow = True
-        Me.bar2.Text = "Main menu"
+        Me.BarButtonItem2.Caption = "Account"
+        Me.BarButtonItem2.Id = 5
+        Me.BarButtonItem2.Name = "BarButtonItem2"
+        '
+        'BarButtonItem3
+        '
+        Me.BarButtonItem3.Caption = "Admin"
+        Me.BarButtonItem3.Id = 6
+        Me.BarButtonItem3.Name = "BarButtonItem3"
+        '
+        'BarButtonItem4
+        '
+        Me.BarButtonItem4.Caption = "Developer"
+        Me.BarButtonItem4.Id = 7
+        Me.BarButtonItem4.Name = "BarButtonItem4"
         '
         'bar3
         '
@@ -96,7 +110,7 @@ Partial Class parrentfrm
         Me.bar3.DockCol = 0
         Me.bar3.DockRow = 0
         Me.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom
-        Me.bar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.barBtnStart), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem1)})
+        Me.bar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.barBtnStart), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem5)})
         Me.bar3.OptionsBar.AllowQuickCustomization = False
         Me.bar3.OptionsBar.DrawDragBorder = False
         Me.bar3.OptionsBar.UseWholeRow = True
@@ -125,6 +139,22 @@ Partial Class parrentfrm
         Me.BtnExit.Caption = "Exit"
         Me.BtnExit.Id = 1
         Me.BtnExit.Name = "BtnExit"
+        '
+        'BarButtonItem1
+        '
+        Me.BarButtonItem1.Caption = "Exit"
+        Me.BarButtonItem1.Id = 4
+        Me.BarButtonItem1.ImageOptions.Image = CType(resources.GetObject("BarButtonItem1.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem1.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem1.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.BarButtonItem1.Name = "BarButtonItem1"
+        '
+        'BarButtonItem5
+        '
+        Me.BarButtonItem5.Caption = "BarButtonItem5"
+        Me.BarButtonItem5.Id = 10
+        Me.BarButtonItem5.ImageOptions.Image = Global.MyOs.My.Resources.Resources.Accounting
+        Me.BarButtonItem5.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem5.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.BarButtonItem5.Name = "BarButtonItem5"
         '
         'barDockControlTop
         '
@@ -161,30 +191,6 @@ Partial Class parrentfrm
         Me.barDockControlRight.Manager = Me.barManager1
         Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 648)
-        '
-        'BarButtonItem1
-        '
-        Me.BarButtonItem1.Caption = "Exit"
-        Me.BarButtonItem1.Id = 4
-        Me.BarButtonItem1.Name = "BarButtonItem1"
-        '
-        'BarButtonItem2
-        '
-        Me.BarButtonItem2.Caption = "Account"
-        Me.BarButtonItem2.Id = 5
-        Me.BarButtonItem2.Name = "BarButtonItem2"
-        '
-        'BarButtonItem3
-        '
-        Me.BarButtonItem3.Caption = "Admin"
-        Me.BarButtonItem3.Id = 6
-        Me.BarButtonItem3.Name = "BarButtonItem3"
-        '
-        'BarButtonItem4
-        '
-        Me.BarButtonItem4.Caption = "Developer"
-        Me.BarButtonItem4.Id = 7
-        Me.BarButtonItem4.Name = "BarButtonItem4"
         '
         'parrentfrm
         '
@@ -224,4 +230,5 @@ Partial Class parrentfrm
     Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
 End Class

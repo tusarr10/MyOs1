@@ -140,7 +140,6 @@ C:\Users\91828\Source\myOS\myos\MyOs\MyOs\bin\Debug\ru\DevExpress.Pdf.v20.1.Core
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.parrentfrm.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.Resources.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.Settingsetup.resources
-C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.ssMyOs.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.vbproj.GenerateResource.Cache
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.exe.licenses
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.newuserview.resources
@@ -187,3 +186,4 @@ C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.AllUser.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.vbprojResolveAssemblyReference.cache
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.XtraForm1.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.Alluserfrm.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.UserAc.resources
