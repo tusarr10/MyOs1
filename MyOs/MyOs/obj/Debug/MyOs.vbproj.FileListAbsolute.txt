@@ -187,3 +187,6 @@ C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.vbprojResolveAssemblyRe
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.XtraForm1.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.Alluserfrm.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.UserAc.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accopen1.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accountopen2.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accountopen3.resources

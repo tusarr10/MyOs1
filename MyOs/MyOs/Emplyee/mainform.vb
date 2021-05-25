@@ -61,4 +61,12 @@ Public Class mainform
         'parentRRibbon.StatusBar.MergeStatusBar(childRibbon.StatusBar)
         TryCast(sender, RibbonControl).StatusBar.MergeStatusBar(e.MergedChild.StatusBar)
     End Sub
+
+    Private Sub mainform_DoubleClick(sender As Object, e As EventArgs) Handles Me.DoubleClick
+        Try
+            PanelControl1.Controls.Clear()
+            PanelControl1.Hide()
+        Catch ex As Exception
+        End Try
+    End Sub
 End Class
