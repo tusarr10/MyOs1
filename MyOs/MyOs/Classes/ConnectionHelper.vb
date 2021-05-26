@@ -1,0 +1,3 @@
+﻿Module ConnectionHelper
+
+End Module

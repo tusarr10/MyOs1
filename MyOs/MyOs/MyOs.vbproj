@@ -88,6 +88,7 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ConnectionHelper.vb" />
     <Compile Include="Classes\newuser_cls.vb" />
     <Compile Include="Control\DetailsView.Designer.vb">
       <DependentUpon>DetailsView.vb</DependentUpon>
@@ -113,6 +114,7 @@
     <Compile Include="Emplyee\forms\accountopen\accountopen4.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Emplyee\forms\accountopen\class\DataHelper.vb" />
     <Compile Include="Emplyee\forms\accountopen\dialog\RDdialog.Designer.vb">
       <DependentUpon>RDdialog.vb</DependentUpon>
     </Compile>
