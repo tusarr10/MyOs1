@@ -1,4 +1,5 @@
-﻿Imports DevExpress.XtraBars.Ribbon
+﻿Imports System.Configuration
+Imports DevExpress.XtraBars.Ribbon
 Imports DevExpress.XtraEditors
 
 Public Class mainform
@@ -68,5 +69,9 @@ Public Class mainform
             PanelControl1.Hide()
         Catch ex As Exception
         End Try
+    End Sub
+
+    Private Sub mainform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

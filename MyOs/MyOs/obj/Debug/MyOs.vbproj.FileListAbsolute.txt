@@ -191,3 +191,4 @@ C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.vbproj.GenerateResource
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.exe.licenses
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.exe
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.pdb
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.gdvint.resources

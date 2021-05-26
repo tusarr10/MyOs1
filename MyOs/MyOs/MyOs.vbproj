@@ -114,7 +114,7 @@
     <Compile Include="Emplyee\forms\accountopen\accountopen4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\class\DataHelper.vb" />
+    <Compile Include="Emplyee\forms\accountopen\class\DataHelpercifdb.vb" />
     <Compile Include="Emplyee\forms\accountopen\dialog\RDdialog.Designer.vb">
       <DependentUpon>RDdialog.vb</DependentUpon>
     </Compile>
@@ -125,6 +125,12 @@
       <DependentUpon>accountopen3.vb</DependentUpon>
     </Compile>
     <Compile Include="Emplyee\forms\accountopen\accountopen3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emplyee\forms\accountopen\gdvint.Designer.vb">
+      <DependentUpon>gdvint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emplyee\forms\accountopen\gdvint.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Emplyee\usercontrol\AllUser.Designer.vb">
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen3.resx">
       <DependentUpon>accountopen3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emplyee\forms\accountopen\gdvint.resx">
+      <DependentUpon>gdvint.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emplyee\usercontrol\AllUser.resx">
       <DependentUpon>AllUser.vb</DependentUpon>

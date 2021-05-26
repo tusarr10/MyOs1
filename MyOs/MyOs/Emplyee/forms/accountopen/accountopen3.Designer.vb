@@ -191,13 +191,13 @@ Partial Class accountopen3
         Me.SimpleButton1.Size = New System.Drawing.Size(42, 43)
         Me.SimpleButton1.TabIndex = 0
         '
-        'UserAc
+        'accountopen3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(981, 324)
         Me.Controls.Add(Me.PanelControl1)
-        Me.Name = "UserAc"
+        Me.Name = "accountopen3"
         Me.Text = "UserAc"
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl1.ResumeLayout(False)

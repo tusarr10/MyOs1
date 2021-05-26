@@ -23,7 +23,7 @@ Partial Class accountopen2
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
         Me.PanelControl11 = New DevExpress.XtraEditors.PanelControl()
         Me.PanelControl20 = New DevExpress.XtraEditors.PanelControl()
-        Me.TextEdit9 = New DevExpress.XtraEditors.TextEdit()
+        Me.addresstb = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl9 = New DevExpress.XtraEditors.LabelControl()
         Me.PanelControl10 = New DevExpress.XtraEditors.PanelControl()
         Me.PanelControl19 = New DevExpress.XtraEditors.PanelControl()
@@ -62,16 +62,16 @@ Partial Class accountopen2
         Me.ciftb = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.PanelControl2 = New DevExpress.XtraEditors.PanelControl()
+        Me.acnolb = New System.Windows.Forms.Label()
         Me.signbx = New DevExpress.XtraEditors.PictureEdit()
         Me.photobx = New DevExpress.XtraEditors.PictureEdit()
-        Me.acnolb = New System.Windows.Forms.Label()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
         CType(Me.PanelControl11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl11.SuspendLayout()
         CType(Me.PanelControl20, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl20.SuspendLayout()
-        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.addresstb.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl10.SuspendLayout()
         CType(Me.PanelControl19, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,21 +152,21 @@ Partial Class accountopen2
         '
         'PanelControl20
         '
-        Me.PanelControl20.Controls.Add(Me.TextEdit9)
+        Me.PanelControl20.Controls.Add(Me.addresstb)
         Me.PanelControl20.Dock = System.Windows.Forms.DockStyle.Right
         Me.PanelControl20.Location = New System.Drawing.Point(418, 2)
         Me.PanelControl20.Name = "PanelControl20"
         Me.PanelControl20.Size = New System.Drawing.Size(403, 31)
         Me.PanelControl20.TabIndex = 2
         '
-        'TextEdit9
+        'addresstb
         '
-        Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 2)
-        Me.TextEdit9.Name = "TextEdit9"
-        Me.TextEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-        Me.TextEdit9.Size = New System.Drawing.Size(399, 24)
-        Me.TextEdit9.TabIndex = 1
+        Me.addresstb.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.addresstb.Location = New System.Drawing.Point(2, 2)
+        Me.addresstb.Name = "addresstb"
+        Me.addresstb.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
+        Me.addresstb.Size = New System.Drawing.Size(399, 24)
+        Me.addresstb.TabIndex = 1
         '
         'LabelControl9
         '
@@ -217,7 +217,7 @@ Partial Class accountopen2
         Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
         Me.SimpleButton4.Location = New System.Drawing.Point(334, 518)
         Me.SimpleButton4.Name = "SimpleButton4"
-        Me.SimpleButton4.Size = New System.Drawing.Size(39, 30)
+        Me.SimpleButton4.Size = New System.Drawing.Size(42, 36)
         Me.SimpleButton4.TabIndex = 11
         '
         'SimpleButton3
@@ -225,7 +225,7 @@ Partial Class accountopen2
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
         Me.SimpleButton3.Location = New System.Drawing.Point(449, 516)
         Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(39, 30)
+        Me.SimpleButton3.Size = New System.Drawing.Size(38, 38)
         Me.SimpleButton3.TabIndex = 10
         '
         'SimpleButton2
@@ -233,13 +233,13 @@ Partial Class accountopen2
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
         Me.SimpleButton2.Location = New System.Drawing.Point(25, 511)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(35, 36)
+        Me.SimpleButton2.Size = New System.Drawing.Size(45, 36)
         Me.SimpleButton2.TabIndex = 9
         '
         'SimpleButton1
         '
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(734, 514)
+        Me.SimpleButton1.Location = New System.Drawing.Point(734, 520)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(41, 34)
         Me.SimpleButton1.TabIndex = 8
@@ -501,6 +501,15 @@ Partial Class accountopen2
         Me.PanelControl2.Size = New System.Drawing.Size(823, 168)
         Me.PanelControl2.TabIndex = 0
         '
+        'acnolb
+        '
+        Me.acnolb.AutoSize = True
+        Me.acnolb.Location = New System.Drawing.Point(611, 31)
+        Me.acnolb.Name = "acnolb"
+        Me.acnolb.Size = New System.Drawing.Size(108, 17)
+        Me.acnolb.TabIndex = 10
+        Me.acnolb.Text = "AccountNumber"
+        '
         'signbx
         '
         Me.signbx.Location = New System.Drawing.Point(516, 78)
@@ -517,15 +526,6 @@ Partial Class accountopen2
         Me.photobx.Size = New System.Drawing.Size(203, 160)
         Me.photobx.TabIndex = 8
         '
-        'acnolb
-        '
-        Me.acnolb.AutoSize = True
-        Me.acnolb.Location = New System.Drawing.Point(611, 34)
-        Me.acnolb.Name = "acnolb"
-        Me.acnolb.Size = New System.Drawing.Size(108, 17)
-        Me.acnolb.TabIndex = 10
-        Me.acnolb.Text = "AccountNumber"
-        '
         'accountopen2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -541,7 +541,7 @@ Partial Class accountopen2
         Me.PanelControl11.PerformLayout()
         CType(Me.PanelControl20, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl20.ResumeLayout(False)
-        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.addresstb.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PanelControl10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl10.ResumeLayout(False)
         Me.PanelControl10.PerformLayout()
@@ -602,7 +602,7 @@ Partial Class accountopen2
     Friend WithEvents PanelControl1 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents PanelControl11 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents PanelControl20 As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents TextEdit9 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents addresstb As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl9 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents PanelControl10 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents PanelControl19 As DevExpress.XtraEditors.PanelControl
