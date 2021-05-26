@@ -45,10 +45,10 @@ Module DataHelpercifdb
             Dim i
             i = datacommand.ExecuteNonQuery()
             If i > 0 Then
-                MsgBox("Record successfully saved")
+                MsgBox("Record successfully saved /update")
 
             Else
-                MsgBox("Record Not saved", MsgBoxStyle.Critical)
+                MsgBox("Record Not saved /update", MsgBoxStyle.Critical)
             End If
             databaseconnection.Close()
         Catch ex As Exception

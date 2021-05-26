@@ -215,7 +215,7 @@ Partial Class accountopen2
         'SimpleButton4
         '
         Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton4.Location = New System.Drawing.Point(334, 518)
+        Me.SimpleButton4.Location = New System.Drawing.Point(244, 516)
         Me.SimpleButton4.Name = "SimpleButton4"
         Me.SimpleButton4.Size = New System.Drawing.Size(42, 36)
         Me.SimpleButton4.TabIndex = 11
@@ -223,7 +223,7 @@ Partial Class accountopen2
         'SimpleButton3
         '
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(449, 516)
+        Me.SimpleButton3.Location = New System.Drawing.Point(449, 509)
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(38, 38)
         Me.SimpleButton3.TabIndex = 10
