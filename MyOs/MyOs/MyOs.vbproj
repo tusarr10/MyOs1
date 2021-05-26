@@ -107,10 +107,10 @@
     <Compile Include="Emplyee\forms\accountopen\accountopen2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen3.Designer.vb">
-      <DependentUpon>accountopen3.vb</DependentUpon>
+    <Compile Include="Emplyee\forms\accountopen\accountopen4.Designer.vb">
+      <DependentUpon>accountopen4.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen3.vb">
+    <Compile Include="Emplyee\forms\accountopen\accountopen4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Emplyee\forms\accountopen\dialog\RDdialog.Designer.vb">
@@ -119,10 +119,10 @@
     <Compile Include="Emplyee\forms\accountopen\dialog\RDdialog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\UserAc.Designer.vb">
-      <DependentUpon>UserAc.vb</DependentUpon>
+    <Compile Include="Emplyee\forms\accountopen\accountopen3.Designer.vb">
+      <DependentUpon>accountopen3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\UserAc.vb">
+    <Compile Include="Emplyee\forms\accountopen\accountopen3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Emplyee\usercontrol\AllUser.Designer.vb">
@@ -188,14 +188,14 @@
     <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen2.resx">
       <DependentUpon>accountopen2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen3.resx">
-      <DependentUpon>accountopen3.vb</DependentUpon>
+    <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen4.resx">
+      <DependentUpon>accountopen4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emplyee\forms\accountopen\dialog\RDdialog.resx">
       <DependentUpon>RDdialog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\UserAc.resx">
-      <DependentUpon>UserAc.vb</DependentUpon>
+    <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen3.resx">
+      <DependentUpon>accountopen3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emplyee\usercontrol\AllUser.resx">
       <DependentUpon>AllUser.vb</DependentUpon>

@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub BarButtonItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
-        UserAc.ShowDialog()
+        accopen1.ShowDialog()
 
     End Sub
 End Class
