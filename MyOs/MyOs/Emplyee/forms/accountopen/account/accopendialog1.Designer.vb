@@ -37,6 +37,7 @@ Partial Class accopendialog1
         Me.PanelControl3 = New DevExpress.XtraEditors.PanelControl()
         Me.getnametb = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
+        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
@@ -73,7 +74,7 @@ Partial Class accopendialog1
         Me.OK_Button.Name = "OK_Button"
         Me.OK_Button.Size = New System.Drawing.Size(89, 28)
         Me.OK_Button.TabIndex = 0
-        Me.OK_Button.Text = "OK"
+        Me.OK_Button.Text = "Next"
         '
         'Cancel_Button
         '
@@ -156,6 +157,7 @@ Partial Class accopendialog1
         '
         'PanelControl3
         '
+        Me.PanelControl3.Controls.Add(Me.SimpleButton3)
         Me.PanelControl3.Controls.Add(Me.getnametb)
         Me.PanelControl3.Controls.Add(Me.LabelControl3)
         Me.PanelControl3.Dock = System.Windows.Forms.DockStyle.Top
@@ -169,7 +171,7 @@ Partial Class accopendialog1
         Me.getnametb.Enabled = False
         Me.getnametb.Location = New System.Drawing.Point(213, 29)
         Me.getnametb.Name = "getnametb"
-        Me.getnametb.Size = New System.Drawing.Size(227, 22)
+        Me.getnametb.Size = New System.Drawing.Size(175, 22)
         Me.getnametb.TabIndex = 0
         '
         'LabelControl3
@@ -179,6 +181,14 @@ Partial Class accopendialog1
         Me.LabelControl3.Size = New System.Drawing.Size(33, 16)
         Me.LabelControl3.TabIndex = 1
         Me.LabelControl3.Text = "Name"
+        '
+        'SimpleButton3
+        '
+        Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton3.Location = New System.Drawing.Point(408, 22)
+        Me.SimpleButton3.Name = "SimpleButton3"
+        Me.SimpleButton3.Size = New System.Drawing.Size(30, 29)
+        Me.SimpleButton3.TabIndex = 2
         '
         'accopendialog1
         '
@@ -229,4 +239,5 @@ Partial Class accopendialog1
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
 End Class

@@ -92,18 +92,7 @@ Module DataHelpercifdb
         End Try
     End Sub
 
-    'Private Sub ShowData(ByVal CurrentRow)
-    '    Try
-    '        Id.Text = Dst.Tables("empinfo").Rows(CurrentRow)("Id")
-    '        FName.Text = Dst.Tables("empinfo").Rows(CurrentRow)("FName")
-    '        LName.Text = Dst.Tables("empinfo").Rows(CurrentRow)("LName")
-    '        Designation.Text = Dst.Tables("empinfo").Rows(CurrentRow)("Designation")
-    '        Salary.Text = Dst.Tables("empinfo").Rows(CurrentRow)("Salary")
 
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message, "error")
-    '    End Try
-    'End Sub
     Function getcif(ByVal currentrow) As String
         Try : Return CType(datasetcifdb.Tables("cifdb").Rows(currentrow)("cif"), String)
 

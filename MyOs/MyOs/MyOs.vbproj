@@ -97,6 +97,7 @@
     <Compile Include="Control\DetailsView.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Emplyee\forms\accountopen\account\opendialog1module.vb" />
     <Compile Include="Emplyee\forms\accountopen\cifopen1.Designer.vb">
       <DependentUpon>cifopen1.vb</DependentUpon>
     </Compile>
