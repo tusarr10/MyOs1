@@ -170,7 +170,7 @@ Partial Class accountopen3
         'SimpleButton3
         '
         Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton3.Location = New System.Drawing.Point(539, 20)
+        Me.SimpleButton3.Location = New System.Drawing.Point(865, 21)
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(41, 38)
         Me.SimpleButton3.TabIndex = 2
@@ -178,7 +178,7 @@ Partial Class accountopen3
         'SimpleButton2
         '
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(413, 16)
+        Me.SimpleButton2.Location = New System.Drawing.Point(814, 21)
         Me.SimpleButton2.Name = "SimpleButton2"
         Me.SimpleButton2.Size = New System.Drawing.Size(45, 39)
         Me.SimpleButton2.TabIndex = 1
@@ -186,7 +186,7 @@ Partial Class accountopen3
         'SimpleButton1
         '
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(24, 12)
+        Me.SimpleButton1.Location = New System.Drawing.Point(766, 21)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(42, 43)
         Me.SimpleButton1.TabIndex = 0
@@ -197,7 +197,7 @@ Partial Class accountopen3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(981, 324)
         Me.Controls.Add(Me.PanelControl1)
-        Me.Name = "accountopen3"
+        Me.name = "accountopen3"
         Me.Text = "UserAc"
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl1.ResumeLayout(False)

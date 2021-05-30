@@ -1,13 +1,8 @@
-﻿Imports System.Configuration
-Imports DevExpress.XtraBars.Ribbon
+﻿Imports DevExpress.XtraBars.Ribbon
 Imports DevExpress.XtraEditors
 
 Public Class mainform
     Public Shared sendmyname As String = "MainForm"
-
-    Private Sub BarButtonItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs)
-
-    End Sub
 
     Private Sub BackstageViewTabItem2_SelectedChanged(sender As Object, e As DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs) Handles BackstageViewTabItem2.SelectedChanged
 
@@ -41,6 +36,9 @@ Public Class mainform
     End Sub
 
     Private Sub alluserLB_LinkClicked(sender As Object, e As DevExpress.XtraNavBar.NavBarLinkEventArgs) Handles alluserLB.LinkClicked
+        alluserfunction()
+    End Sub
+    Sub alluserfunction()
         Try
             PanelControl1.Controls.Clear()
             PanelControl1.Hide()
@@ -53,8 +51,6 @@ Public Class mainform
             Alluserfrm.BringToFront()
 
         End Try
-
-
     End Sub
     Private Sub RibbonControl_Merge(ByVal sender As System.Object, ByVal e As RibbonMergeEventArgs) Handles RibbonControl.Merge
         'Dim parentRRibbon As RibbonControl = TryCast(sender, RibbonControl)
@@ -72,6 +68,7 @@ Public Class mainform
     End Sub
 
     Private Sub mainform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        alluserfunction()
 
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class accopen1
+Partial Class cifopen1
     Inherits DevExpress.XtraEditors.XtraForm
 
     'Form overrides dispose to clean up the component list.
@@ -19,7 +19,7 @@ Partial Class accopen1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(accopen1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cifopen1))
         Me.searchciftb = New DevExpress.XtraEditors.TextEdit()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.searchactb = New DevExpress.XtraEditors.TextEdit()
@@ -31,6 +31,8 @@ Partial Class accopen1
         '
         Me.searchciftb.Location = New System.Drawing.Point(12, 54)
         Me.searchciftb.Name = "searchciftb"
+        Me.searchciftb.Properties.NullText = "ENTER CIF IF "
+        Me.searchciftb.Properties.NullValuePrompt = "ENTER CIF"
         Me.searchciftb.Size = New System.Drawing.Size(354, 22)
         Me.searchciftb.TabIndex = 0
         '
@@ -46,6 +48,8 @@ Partial Class accopen1
         '
         Me.searchactb.Location = New System.Drawing.Point(12, 123)
         Me.searchactb.Name = "searchactb"
+        Me.searchactb.Properties.NullText = "ENTER ACCOUNT"
+        Me.searchactb.Properties.NullValuePrompt = "ENTER ACCOUNT NUMBER "
         Me.searchactb.Size = New System.Drawing.Size(354, 22)
         Me.searchactb.TabIndex = 0
         '

@@ -1,5 +1,6 @@
 ﻿Imports System.Configuration
-Imports System.Data.OleDb
+Imports System.Data.SqlClient
+
 
 
 
@@ -7,33 +8,31 @@ Module ConnectionHelper
 
     Public databaseconnectionstring As String = ""
 
-    Public bdatareader As OleDbDataReader = Nothing
+    Public bdatareader As SqlDataReader = Nothing
 
     Public datatable As DataTable
 
-    Public databaseconnection As OleDbConnection = Nothing
+    Public databaseconnection As SqlConnection = Nothing
 
-    Public dataadapter As OleDbDataAdapter
+    Public dataadapter As SqlDataAdapter
 
     Public datasetcifdb As New DataSet 'for cifdb
     Public datasetliveaccount As New DataSet ' for live account
 
-    Public datacommand As OleDbCommand = Nothing
+    Public datacommand As SqlCommand = Nothing
 
     Public currentrow As Object
 
 
     Public databasesource As String = ConfigurationSettings.AppSettings("dbsource").ToString()
 
-    Dim configurationstring As String = ConfigurationSettings.AppSettings("dbconnectionstring").ToString()
-
 
     Function connectionString(ByVal databasename As String, ByVal databasepassword As String) As String
-        databaseconnectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath + databasename & ";Jet OLEDB:Database Password=" & databasepassword & ";"
+        databaseconnectionstring = "server=tmedia ; database=" & databasename & ";user=tusar;password=tusarranjan"
         Return databaseconnectionstring
     End Function
     Function connectionString(ByVal databasename As String) As String
-        databaseconnectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath + databasename & ";"
+        databaseconnectionstring = "server=tmedia ; database=" & databasename & ";user=tusar;password=tusarranjan"
         Return databaseconnectionstring
     End Function
 

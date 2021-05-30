@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class accountopen2
+Partial Class cifopen2
     Inherits DevExpress.XtraEditors.XtraForm
 
     'Form overrides dispose to clean up the component list.
@@ -19,7 +19,7 @@ Partial Class accountopen2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(accountopen2))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cifopen2))
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
         Me.PanelControl11 = New DevExpress.XtraEditors.PanelControl()
         Me.PanelControl20 = New DevExpress.XtraEditors.PanelControl()
@@ -30,6 +30,7 @@ Partial Class accountopen2
         Me.RadioGroup1 = New DevExpress.XtraEditors.RadioGroup()
         Me.LabelControl8 = New DevExpress.XtraEditors.LabelControl()
         Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
@@ -123,6 +124,7 @@ Partial Class accountopen2
         Me.PanelControl1.Controls.Add(Me.PanelControl11)
         Me.PanelControl1.Controls.Add(Me.PanelControl10)
         Me.PanelControl1.Controls.Add(Me.SimpleButton4)
+        Me.PanelControl1.Controls.Add(Me.SimpleButton5)
         Me.PanelControl1.Controls.Add(Me.SimpleButton3)
         Me.PanelControl1.Controls.Add(Me.SimpleButton2)
         Me.PanelControl1.Controls.Add(Me.SimpleButton1)
@@ -215,10 +217,18 @@ Partial Class accountopen2
         'SimpleButton4
         '
         Me.SimpleButton4.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton4.Location = New System.Drawing.Point(244, 516)
+        Me.SimpleButton4.Location = New System.Drawing.Point(247, 509)
         Me.SimpleButton4.Name = "SimpleButton4"
         Me.SimpleButton4.Size = New System.Drawing.Size(42, 36)
         Me.SimpleButton4.TabIndex = 11
+        '
+        'SimpleButton5
+        '
+        Me.SimpleButton5.ImageOptions.Image = CType(resources.GetObject("SimpleButton5.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton5.Location = New System.Drawing.Point(351, 509)
+        Me.SimpleButton5.Name = "SimpleButton5"
+        Me.SimpleButton5.Size = New System.Drawing.Size(38, 38)
+        Me.SimpleButton5.TabIndex = 10
         '
         'SimpleButton3
         '
@@ -231,15 +241,16 @@ Partial Class accountopen2
         'SimpleButton2
         '
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(25, 511)
+        Me.SimpleButton2.Location = New System.Drawing.Point(25, 509)
         Me.SimpleButton2.Name = "SimpleButton2"
         Me.SimpleButton2.Size = New System.Drawing.Size(45, 36)
         Me.SimpleButton2.TabIndex = 9
         '
         'SimpleButton1
         '
+        Me.SimpleButton1.Enabled = False
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(734, 520)
+        Me.SimpleButton1.Location = New System.Drawing.Point(734, 509)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(41, 34)
         Me.SimpleButton1.TabIndex = 8
@@ -526,13 +537,13 @@ Partial Class accountopen2
         Me.photobx.Size = New System.Drawing.Size(203, 160)
         Me.photobx.TabIndex = 8
         '
-        'accountopen2
+        'cifopen2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(827, 566)
         Me.Controls.Add(Me.PanelControl1)
-        Me.Name = "accountopen2"
+        Me.Name = "cifopen2"
         Me.Text = "accountopen2"
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl1.ResumeLayout(False)
@@ -644,4 +655,5 @@ Partial Class accountopen2
     Friend WithEvents signbx As DevExpress.XtraEditors.PictureEdit
     Friend WithEvents photobx As DevExpress.XtraEditors.PictureEdit
     Friend WithEvents acnolb As Label
+    Friend WithEvents SimpleButton5 As DevExpress.XtraEditors.SimpleButton
 End Class

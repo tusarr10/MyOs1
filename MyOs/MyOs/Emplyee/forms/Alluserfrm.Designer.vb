@@ -41,24 +41,12 @@ Partial Class Alluserfrm
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.id = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.N_AME = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.CIF = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ACNO = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.FNAME = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.D_ATE = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.aDDRESS = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.dob = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.aDHAR = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.PAN = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.NOMINI = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GENDER = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ACTYPE = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.NOTES = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.AMOUNT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.rEFF_NO = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.mobile = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.recno = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ToolTipController2 = New DevExpress.Utils.ToolTipController(Me.components)
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
         Me.PanelControl3 = New DevExpress.XtraEditors.PanelControl()
@@ -94,7 +82,7 @@ Partial Class Alluserfrm
         '
         'BarButtonItem1
         '
-        Me.BarButtonItem1.Caption = "New"
+        Me.BarButtonItem1.Caption = "CIF"
         Me.BarButtonItem1.Id = 1
         Me.BarButtonItem1.ImageOptions.Image = CType(resources.GetObject("BarButtonItem1.ImageOptions.Image"), System.Drawing.Image)
         Me.BarButtonItem1.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem1.ImageOptions.LargeImage"), System.Drawing.Image)
@@ -102,7 +90,7 @@ Partial Class Alluserfrm
         '
         'BarButtonItem2
         '
-        Me.BarButtonItem2.Caption = "View"
+        Me.BarButtonItem2.Caption = "Account"
         Me.BarButtonItem2.Id = 2
         Me.BarButtonItem2.ImageOptions.Image = CType(resources.GetObject("BarButtonItem2.ImageOptions.Image"), System.Drawing.Image)
         Me.BarButtonItem2.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem2.ImageOptions.LargeImage"), System.Drawing.Image)
@@ -280,28 +268,10 @@ Partial Class Alluserfrm
         '
         'GridView1
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.id, Me.N_AME, Me.CIF, Me.ACNO, Me.FNAME, Me.D_ATE, Me.aDDRESS, Me.dob, Me.aDHAR, Me.PAN, Me.NOMINI, Me.GENDER, Me.ACTYPE, Me.NOTES, Me.AMOUNT, Me.rEFF_NO, Me.mobile, Me.recno})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.N_AME, Me.CIF, Me.ACNO, Me.NOMINI, Me.ACTYPE, Me.AMOUNT})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsView.EnableAppearanceOddRow = True
-        '
-        'id
-        '
-        Me.id.AppearanceCell.BackColor = System.Drawing.Color.Blue
-        Me.id.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.id.AppearanceCell.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.id.AppearanceCell.Options.UseBackColor = True
-        Me.id.AppearanceCell.Options.UseBorderColor = True
-        Me.id.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.id.AppearanceHeader.BackColor2 = System.Drawing.Color.Red
-        Me.id.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.id.AppearanceHeader.Options.UseBackColor = True
-        Me.id.AppearanceHeader.Options.UseBorderColor = True
-        Me.id.Caption = "ID"
-        Me.id.FieldName = "id"
-        Me.id.Name = "id"
-        Me.id.Visible = True
-        Me.id.VisibleIndex = 0
         '
         'N_AME
         '
@@ -319,7 +289,7 @@ Partial Class Alluserfrm
         Me.N_AME.FieldName = "N_AME"
         Me.N_AME.Name = "N_AME"
         Me.N_AME.Visible = True
-        Me.N_AME.VisibleIndex = 2
+        Me.N_AME.VisibleIndex = 1
         '
         'CIF
         '
@@ -337,7 +307,7 @@ Partial Class Alluserfrm
         Me.CIF.FieldName = "CIF"
         Me.CIF.Name = "CIF"
         Me.CIF.Visible = True
-        Me.CIF.VisibleIndex = 3
+        Me.CIF.VisibleIndex = 2
         '
         'ACNO
         '
@@ -355,115 +325,7 @@ Partial Class Alluserfrm
         Me.ACNO.FieldName = "ACNO"
         Me.ACNO.Name = "ACNO"
         Me.ACNO.Visible = True
-        Me.ACNO.VisibleIndex = 1
-        '
-        'FNAME
-        '
-        Me.FNAME.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.FNAME.AppearanceCell.BackColor2 = System.Drawing.Color.Lime
-        Me.FNAME.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.FNAME.AppearanceCell.Options.UseBackColor = True
-        Me.FNAME.AppearanceCell.Options.UseBorderColor = True
-        Me.FNAME.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.FNAME.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.FNAME.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.FNAME.AppearanceHeader.Options.UseBackColor = True
-        Me.FNAME.AppearanceHeader.Options.UseBorderColor = True
-        Me.FNAME.Caption = "GUARDIAN"
-        Me.FNAME.FieldName = "FNAME"
-        Me.FNAME.Name = "FNAME"
-        Me.FNAME.Visible = True
-        Me.FNAME.VisibleIndex = 5
-        '
-        'D_ATE
-        '
-        Me.D_ATE.AppearanceCell.BackColor = System.Drawing.Color.Red
-        Me.D_ATE.AppearanceCell.BackColor2 = System.Drawing.Color.Fuchsia
-        Me.D_ATE.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.D_ATE.AppearanceCell.Options.UseBackColor = True
-        Me.D_ATE.AppearanceCell.Options.UseBorderColor = True
-        Me.D_ATE.AppearanceHeader.BackColor = System.Drawing.Color.Blue
-        Me.D_ATE.AppearanceHeader.BackColor2 = System.Drawing.Color.Lime
-        Me.D_ATE.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.D_ATE.AppearanceHeader.Options.UseBackColor = True
-        Me.D_ATE.AppearanceHeader.Options.UseBorderColor = True
-        Me.D_ATE.Caption = "DATE"
-        Me.D_ATE.FieldName = "D_ATE"
-        Me.D_ATE.Name = "D_ATE"
-        Me.D_ATE.Visible = True
-        Me.D_ATE.VisibleIndex = 6
-        '
-        'aDDRESS
-        '
-        Me.aDDRESS.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.aDDRESS.AppearanceCell.BackColor2 = System.Drawing.Color.Lime
-        Me.aDDRESS.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.aDDRESS.AppearanceCell.Options.UseBackColor = True
-        Me.aDDRESS.AppearanceCell.Options.UseBorderColor = True
-        Me.aDDRESS.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.aDDRESS.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.aDDRESS.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.aDDRESS.AppearanceHeader.Options.UseBackColor = True
-        Me.aDDRESS.AppearanceHeader.Options.UseBorderColor = True
-        Me.aDDRESS.Caption = "Address"
-        Me.aDDRESS.FieldName = "aDDRESS"
-        Me.aDDRESS.Name = "aDDRESS"
-        Me.aDDRESS.Visible = True
-        Me.aDDRESS.VisibleIndex = 8
-        '
-        'dob
-        '
-        Me.dob.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.dob.AppearanceCell.BackColor2 = System.Drawing.Color.Lime
-        Me.dob.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.dob.AppearanceCell.Options.UseBackColor = True
-        Me.dob.AppearanceCell.Options.UseBorderColor = True
-        Me.dob.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.dob.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.dob.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.dob.AppearanceHeader.Options.UseBackColor = True
-        Me.dob.AppearanceHeader.Options.UseBorderColor = True
-        Me.dob.Caption = "DOB"
-        Me.dob.FieldName = "dob"
-        Me.dob.Name = "dob"
-        Me.dob.Visible = True
-        Me.dob.VisibleIndex = 13
-        '
-        'aDHAR
-        '
-        Me.aDHAR.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.aDHAR.AppearanceCell.BackColor2 = System.Drawing.Color.Lime
-        Me.aDHAR.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.aDHAR.AppearanceCell.Options.UseBackColor = True
-        Me.aDHAR.AppearanceCell.Options.UseBorderColor = True
-        Me.aDHAR.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.aDHAR.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.aDHAR.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.aDHAR.AppearanceHeader.Options.UseBackColor = True
-        Me.aDHAR.AppearanceHeader.Options.UseBorderColor = True
-        Me.aDHAR.Caption = "Adhar"
-        Me.aDHAR.FieldName = "aDHAR"
-        Me.aDHAR.Name = "aDHAR"
-        Me.aDHAR.Visible = True
-        Me.aDHAR.VisibleIndex = 9
-        '
-        'PAN
-        '
-        Me.PAN.AppearanceCell.BackColor = System.Drawing.Color.Red
-        Me.PAN.AppearanceCell.BackColor2 = System.Drawing.Color.Fuchsia
-        Me.PAN.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.PAN.AppearanceCell.Options.UseBackColor = True
-        Me.PAN.AppearanceCell.Options.UseBorderColor = True
-        Me.PAN.AppearanceHeader.BackColor = System.Drawing.Color.Blue
-        Me.PAN.AppearanceHeader.BackColor2 = System.Drawing.Color.Lime
-        Me.PAN.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.PAN.AppearanceHeader.Options.UseBackColor = True
-        Me.PAN.AppearanceHeader.Options.UseBorderColor = True
-        Me.PAN.Caption = "PAN"
-        Me.PAN.FieldName = "PAN"
-        Me.PAN.Name = "PAN"
-        Me.PAN.Visible = True
-        Me.PAN.VisibleIndex = 10
+        Me.ACNO.VisibleIndex = 0
         '
         'NOMINI
         '
@@ -481,25 +343,7 @@ Partial Class Alluserfrm
         Me.NOMINI.FieldName = "NOMINI"
         Me.NOMINI.Name = "NOMINI"
         Me.NOMINI.Visible = True
-        Me.NOMINI.VisibleIndex = 11
-        '
-        'GENDER
-        '
-        Me.GENDER.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.GENDER.AppearanceCell.BackColor2 = System.Drawing.Color.Lime
-        Me.GENDER.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.GENDER.AppearanceCell.Options.UseBackColor = True
-        Me.GENDER.AppearanceCell.Options.UseBorderColor = True
-        Me.GENDER.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.GENDER.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GENDER.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GENDER.AppearanceHeader.Options.UseBackColor = True
-        Me.GENDER.AppearanceHeader.Options.UseBorderColor = True
-        Me.GENDER.Caption = "Gender"
-        Me.GENDER.FieldName = "GENDER"
-        Me.GENDER.Name = "GENDER"
-        Me.GENDER.Visible = True
-        Me.GENDER.VisibleIndex = 4
+        Me.NOMINI.VisibleIndex = 4
         '
         'ACTYPE
         '
@@ -517,25 +361,7 @@ Partial Class Alluserfrm
         Me.ACTYPE.FieldName = "ACTYPE"
         Me.ACTYPE.Name = "ACTYPE"
         Me.ACTYPE.Visible = True
-        Me.ACTYPE.VisibleIndex = 7
-        '
-        'NOTES
-        '
-        Me.NOTES.AppearanceCell.BackColor = System.Drawing.Color.Aqua
-        Me.NOTES.AppearanceCell.BackColor2 = System.Drawing.Color.Blue
-        Me.NOTES.AppearanceCell.BorderColor = System.Drawing.Color.Fuchsia
-        Me.NOTES.AppearanceCell.Options.UseBackColor = True
-        Me.NOTES.AppearanceCell.Options.UseBorderColor = True
-        Me.NOTES.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.NOTES.AppearanceHeader.BackColor2 = System.Drawing.Color.Fuchsia
-        Me.NOTES.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NOTES.AppearanceHeader.Options.UseBackColor = True
-        Me.NOTES.AppearanceHeader.Options.UseBorderColor = True
-        Me.NOTES.Caption = "Notes"
-        Me.NOTES.FieldName = "NOTES"
-        Me.NOTES.Name = "NOTES"
-        Me.NOTES.Visible = True
-        Me.NOTES.VisibleIndex = 17
+        Me.ACTYPE.VisibleIndex = 3
         '
         'AMOUNT
         '
@@ -553,61 +379,7 @@ Partial Class Alluserfrm
         Me.AMOUNT.FieldName = "AMOUNT"
         Me.AMOUNT.Name = "AMOUNT"
         Me.AMOUNT.Visible = True
-        Me.AMOUNT.VisibleIndex = 16
-        '
-        'rEFF_NO
-        '
-        Me.rEFF_NO.AppearanceCell.BackColor = System.Drawing.Color.Red
-        Me.rEFF_NO.AppearanceCell.BackColor2 = System.Drawing.Color.Fuchsia
-        Me.rEFF_NO.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.rEFF_NO.AppearanceCell.Options.UseBackColor = True
-        Me.rEFF_NO.AppearanceCell.Options.UseBorderColor = True
-        Me.rEFF_NO.AppearanceHeader.BackColor = System.Drawing.Color.Blue
-        Me.rEFF_NO.AppearanceHeader.BackColor2 = System.Drawing.Color.Lime
-        Me.rEFF_NO.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.rEFF_NO.AppearanceHeader.Options.UseBackColor = True
-        Me.rEFF_NO.AppearanceHeader.Options.UseBorderColor = True
-        Me.rEFF_NO.Caption = "Refference No"
-        Me.rEFF_NO.FieldName = "rEFF_NO"
-        Me.rEFF_NO.Name = "rEFF_NO"
-        Me.rEFF_NO.Visible = True
-        Me.rEFF_NO.VisibleIndex = 12
-        '
-        'mobile
-        '
-        Me.mobile.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.mobile.AppearanceCell.BackColor2 = System.Drawing.Color.Lime
-        Me.mobile.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.mobile.AppearanceCell.Options.UseBackColor = True
-        Me.mobile.AppearanceCell.Options.UseBorderColor = True
-        Me.mobile.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.mobile.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.mobile.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.mobile.AppearanceHeader.Options.UseBackColor = True
-        Me.mobile.AppearanceHeader.Options.UseBorderColor = True
-        Me.mobile.Caption = "MobileNo"
-        Me.mobile.FieldName = "mobile"
-        Me.mobile.Name = "mobile"
-        Me.mobile.Visible = True
-        Me.mobile.VisibleIndex = 15
-        '
-        'recno
-        '
-        Me.recno.AppearanceCell.BackColor = System.Drawing.Color.Red
-        Me.recno.AppearanceCell.BackColor2 = System.Drawing.Color.Fuchsia
-        Me.recno.AppearanceCell.BorderColor = System.Drawing.Color.Blue
-        Me.recno.AppearanceCell.Options.UseBackColor = True
-        Me.recno.AppearanceCell.Options.UseBorderColor = True
-        Me.recno.AppearanceHeader.BackColor = System.Drawing.Color.Blue
-        Me.recno.AppearanceHeader.BackColor2 = System.Drawing.Color.Lime
-        Me.recno.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.recno.AppearanceHeader.Options.UseBackColor = True
-        Me.recno.AppearanceHeader.Options.UseBorderColor = True
-        Me.recno.Caption = "PR No"
-        Me.recno.FieldName = "recno"
-        Me.recno.Name = "recno"
-        Me.recno.Visible = True
-        Me.recno.VisibleIndex = 14
+        Me.AMOUNT.VisibleIndex = 5
         '
         'PanelControl1
         '
@@ -686,24 +458,12 @@ Partial Class Alluserfrm
     Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
     Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents id As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents N_AME As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents CIF As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents ACNO As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents FNAME As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents D_ATE As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents aDDRESS As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents dob As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents aDHAR As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents PAN As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents NOMINI As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GENDER As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents ACTYPE As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents NOTES As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents AMOUNT As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents rEFF_NO As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents mobile As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents recno As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents ToolTipController2 As DevExpress.Utils.ToolTipController
     Friend WithEvents PanelControl1 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents PanelControl3 As DevExpress.XtraEditors.PanelControl

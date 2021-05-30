@@ -45,6 +45,8 @@ Partial Class accountopen4
         Me.nomininametb = New DevExpress.XtraEditors.TextEdit()
         Me.PanelControl7 = New DevExpress.XtraEditors.PanelControl()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
+        Me.PanelControl15 = New DevExpress.XtraEditors.PanelControl()
         CType(Me.balancetb.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
@@ -79,6 +81,8 @@ Partial Class accountopen4
         CType(Me.nomininametb.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl7.SuspendLayout()
+        CType(Me.PanelControl15, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelControl15.SuspendLayout()
         Me.SuspendLayout()
         '
         'SimpleButton1
@@ -92,7 +96,7 @@ Partial Class accountopen4
         '
         'balancetb
         '
-        Me.balancetb.Location = New System.Drawing.Point(338, 264)
+        Me.balancetb.Location = New System.Drawing.Point(333, 18)
         Me.balancetb.Name = "balancetb"
         Me.balancetb.Size = New System.Drawing.Size(187, 22)
         Me.balancetb.TabIndex = 1
@@ -307,14 +311,32 @@ Partial Class accountopen4
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Enter Nomini Name"
         '
+        'LabelControl1
+        '
+        Me.LabelControl1.Location = New System.Drawing.Point(22, 20)
+        Me.LabelControl1.Name = "LabelControl1"
+        Me.LabelControl1.Size = New System.Drawing.Size(93, 16)
+        Me.LabelControl1.TabIndex = 4
+        Me.LabelControl1.Text = "Account Balance"
+        '
+        'PanelControl15
+        '
+        Me.PanelControl15.Controls.Add(Me.LabelControl1)
+        Me.PanelControl15.Controls.Add(Me.balancetb)
+        Me.PanelControl15.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelControl15.Location = New System.Drawing.Point(0, 239)
+        Me.PanelControl15.Name = "PanelControl15"
+        Me.PanelControl15.Size = New System.Drawing.Size(574, 49)
+        Me.PanelControl15.TabIndex = 5
+        '
         'accountopen4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(574, 385)
+        Me.Controls.Add(Me.PanelControl15)
         Me.Controls.Add(Me.PanelControl2)
         Me.Controls.Add(Me.PanelControl1)
-        Me.Controls.Add(Me.balancetb)
         Me.Controls.Add(Me.SimpleButton1)
         Me.Name = "accountopen4"
         Me.Text = "accountopen3"
@@ -356,6 +378,9 @@ Partial Class accountopen4
         CType(Me.PanelControl7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl7.ResumeLayout(False)
         Me.PanelControl7.PerformLayout()
+        CType(Me.PanelControl15, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelControl15.ResumeLayout(False)
+        Me.PanelControl15.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -385,4 +410,6 @@ Partial Class accountopen4
     Friend WithEvents nomininametb As DevExpress.XtraEditors.TextEdit
     Friend WithEvents PanelControl7 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents Label1 As Label
+    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents PanelControl15 As DevExpress.XtraEditors.PanelControl
 End Class

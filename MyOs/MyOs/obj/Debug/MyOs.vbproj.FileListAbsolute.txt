@@ -171,12 +171,14 @@ C:\Users\91828\Source\myOS\myos\MyOs\MyOs\bin\Debug\de\DevExpress.Office.v20.1.C
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.vbprojResolveAssemblyReference.cache
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.DetailsView.resources
-C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accopen1.resources
-C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accountopen2.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.cifopen1.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.cifopen2.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accountopen4.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.RDdialog.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.accountopen3.resources
+C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.gdvint.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.AllUser.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.Alluserfrm.resources
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.mainform.resources
@@ -190,4 +192,3 @@ C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.vbproj.GenerateResource
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.exe.licenses
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.exe
 C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.pdb
-C:\Users\91828\Source\myOS\myos\MyOs\MyOs\obj\Debug\MyOs.gdvint.resources

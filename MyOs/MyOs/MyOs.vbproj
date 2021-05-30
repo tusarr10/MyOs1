@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ConnectionHelper.vb" />
+    <Compile Include="Classes\info.vb" />
     <Compile Include="Classes\newuser_cls.vb" />
     <Compile Include="Control\DetailsView.Designer.vb">
       <DependentUpon>DetailsView.vb</DependentUpon>
@@ -96,41 +97,41 @@
     <Compile Include="Control\DetailsView.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accopen1.Designer.vb">
-      <DependentUpon>accopen1.vb</DependentUpon>
+    <Compile Include="Emplyee\forms\accountopen\cifopen1.Designer.vb">
+      <DependentUpon>cifopen1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accopen1.vb">
+    <Compile Include="Emplyee\forms\accountopen\cifopen1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen2.Designer.vb">
-      <DependentUpon>accountopen2.vb</DependentUpon>
+    <Compile Include="Emplyee\forms\accountopen\cifopen2.Designer.vb">
+      <DependentUpon>cifopen2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen2.vb">
+    <Compile Include="Emplyee\forms\accountopen\cifopen2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen4.Designer.vb">
+    <Compile Include="Emplyee\forms\accountopen\account\accountopen4.Designer.vb">
       <DependentUpon>accountopen4.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen4.vb">
+    <Compile Include="Emplyee\forms\accountopen\account\accountopen4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Emplyee\forms\accountopen\class\DataHelpercifdb.vb" />
-    <Compile Include="Emplyee\forms\accountopen\dialog\RDdialog.Designer.vb">
-      <DependentUpon>RDdialog.vb</DependentUpon>
+    <Compile Include="Emplyee\forms\accountopen\account\accopendialog1.Designer.vb">
+      <DependentUpon>accopendialog1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\dialog\RDdialog.vb">
+    <Compile Include="Emplyee\forms\accountopen\account\accopendialog1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen3.Designer.vb">
+    <Compile Include="Emplyee\forms\accountopen\account\accountopen3.Designer.vb">
       <DependentUpon>accountopen3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\accountopen3.vb">
+    <Compile Include="Emplyee\forms\accountopen\account\accountopen3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\gdvint.Designer.vb">
+    <Compile Include="Emplyee\forms\gdvint.Designer.vb">
       <DependentUpon>gdvint.vb</DependentUpon>
     </Compile>
-    <Compile Include="Emplyee\forms\accountopen\gdvint.vb">
+    <Compile Include="Emplyee\forms\gdvint.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Emplyee\usercontrol\AllUser.Designer.vb">
@@ -190,22 +191,22 @@
     <EmbeddedResource Include="Control\DetailsView.resx">
       <DependentUpon>DetailsView.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\accopen1.resx">
-      <DependentUpon>accopen1.vb</DependentUpon>
+    <EmbeddedResource Include="Emplyee\forms\accountopen\cifopen1.resx">
+      <DependentUpon>cifopen1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen2.resx">
-      <DependentUpon>accountopen2.vb</DependentUpon>
+    <EmbeddedResource Include="Emplyee\forms\accountopen\cifopen2.resx">
+      <DependentUpon>cifopen2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen4.resx">
+    <EmbeddedResource Include="Emplyee\forms\accountopen\account\accountopen4.resx">
       <DependentUpon>accountopen4.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\dialog\RDdialog.resx">
-      <DependentUpon>RDdialog.vb</DependentUpon>
+    <EmbeddedResource Include="Emplyee\forms\accountopen\account\accopendialog1.resx">
+      <DependentUpon>accopendialog1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\accountopen3.resx">
+    <EmbeddedResource Include="Emplyee\forms\accountopen\account\accountopen3.resx">
       <DependentUpon>accountopen3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emplyee\forms\accountopen\gdvint.resx">
+    <EmbeddedResource Include="Emplyee\forms\gdvint.resx">
       <DependentUpon>gdvint.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emplyee\usercontrol\AllUser.resx">
