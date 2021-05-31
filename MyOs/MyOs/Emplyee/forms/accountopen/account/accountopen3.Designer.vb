@@ -198,7 +198,7 @@ Partial Class accountopen3
         Me.ClientSize = New System.Drawing.Size(981, 324)
         Me.Controls.Add(Me.PanelControl1)
         Me.name = "accountopen3"
-        Me.Text = "UserAc"
+        Me.Text = "For Acno : "
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)

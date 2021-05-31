@@ -1,7 +1,6 @@
 ﻿Public Class cifopen2
 
     Private Sub accountopen2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        e.Cancel = True
 
 
     End Sub

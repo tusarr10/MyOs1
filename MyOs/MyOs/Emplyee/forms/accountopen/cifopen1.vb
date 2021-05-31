@@ -43,6 +43,7 @@ Public Class cifopen1
                     End Try
                 Else
                     cifopen2.acnolb.Text = ""
+                    info.accountexist = False
                 End If
                 Try
                     If DataHelpercifdb.getcif(0) = Nothing Then
@@ -103,6 +104,7 @@ Public Class cifopen1
                     End If
 
                     Me.Hide()
+                    cifopen2.MdiParent = mainform
                     cifopen2.ShowDialog()
                     cifopen2.BringToFront()
                 Catch ex As Exception
@@ -127,4 +129,11 @@ Public Class cifopen1
 
     End Sub
 
+    Private Sub searchactb_EditValueChanged(sender As Object, e As EventArgs) Handles searchactb.EditValueChanged
+
+    End Sub
+
+    Private Sub searchciftb_EditValueChanged(sender As Object, e As EventArgs) Handles searchciftb.EditValueChanged
+
+    End Sub
 End Class

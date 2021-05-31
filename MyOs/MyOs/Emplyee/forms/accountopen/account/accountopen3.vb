@@ -104,6 +104,7 @@
     End Sub
 
     Private Sub accountopen3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "User Account Number : " + info.newacno ' to write User account Number iS 134567890
 
     End Sub
 End Class
